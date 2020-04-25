@@ -18,7 +18,9 @@ This covers:
 This should be done after general QC and probably imputation as well (depending on whether your variants of interest have been directly genotyped or need to be imputed).
 
 If you are interested in rare variants, you may want to change the allele frequency filter in the QC steps. Also you should probably impute using the TOPMed reference panel as this has better imputation for rare variants, as well as African and admixed American samples.
+
 https://twitter.com/umimpute/status/1248365777843085313?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3Aumimpute&ref_url=https%3A%2F%2Fimputationserver.sph.umich.edu%2Findex.html%23!
+
 https://imputation.biodatacatalyst.nhlbi.nih.gov/
 
 
