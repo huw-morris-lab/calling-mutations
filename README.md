@@ -15,7 +15,7 @@ This covers:
 1. Extracting a candidate list of variants from a SNP array dataset after QC
 2. Filtering in R to generate a list of individuals who carry variants of interest
 
-This should be done after general QC and probably imputation as well (depending on whether your variants of interest have been directly genotyped or need to be imputed).
+This should be done after general QC and probably imputation as well (depending on whether your variants of interest have been directly genotyped or need to be imputed). The variant lists I have curated are from the non-imputed data, so if you have imputed your data you will be working with different SNP names.
 
 If you are interested in rare variants, you may want to change the allele frequency filter in the QC steps. Also you should probably impute using the TOPMed reference panel as this has better imputation for rare variants, as well as African and admixed American samples.
 
@@ -57,6 +57,9 @@ library(readxl)
 plink_data <- fread("$FILENANE.PD_snps.recodeA.raw")
 
 #---Rename variants/column names in plink file---####
+
+#I did these steps to name my variants understandable names e.g. GBA_N370S, as the SNP names in NeuroChip are not really interpretable.
+#I created Excel spreadsheets with the variant names in NeuroChip and then an edited name - see files in variant-lists folder.
 
 #Read in list of mutation names
 mutation_names <- read_excel(choose.files(), sheet = "mut_names", col_names = TRUE)
