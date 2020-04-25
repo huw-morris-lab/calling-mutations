@@ -1,5 +1,5 @@
 # calling-mutations
-Steps to call known pathogenic variants/mutations
+Steps to call known pathogenic variants/mutations or other variants of interest.
 
 Date: April 2020
 
